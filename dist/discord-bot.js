@@ -137,7 +137,7 @@ class ServerInfoMessage {
             embed.addField('Game', gs.info.game, true);
             embed.addField('Map', gs.info.map, true);
             embed.addField('Players', gs.info.playersNum + '/' + gs.info.playersMax, true);
-            embed.addField('Connect', 'steam://connect/' + gs.info.connect);
+            //embed.addField('Connect', 'steam://connect/' + gs.info.connect);
             if (((_a = gs.info) === null || _a === void 0 ? void 0 : _a.players.length) > 0) {
                 const pNames = [];
                 const pTimes = [];
