@@ -3,7 +3,7 @@
         "host": "51.38.114.131",
         "port": 22003,
         "type": "mtasa",
-        "appId": 0,
+        "appId": 1,
         "discord": {
             "channelIds": ["962237013652799528"]
         },
