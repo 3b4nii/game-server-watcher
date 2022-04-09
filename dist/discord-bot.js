@@ -146,12 +146,12 @@ class ServerInfoMessage {
                 for (const p of (_b = gs.info) === null || _b === void 0 ? void 0 : _b.players) {
                     c++;
                     pNames.push(p.get('name') || 'n/a');
-                    //pTimes.push((0, hhmmss_1.default)(p.get('time') || 0));
+                    pTimes.push(String(p.get('ping') || 0) + ' ms');
                     //pScores.push(p.get('score') || '0');
                 }
                 embed.addField('Name', '```\n' + pNames.join('\n').slice(0, 1016) + '\n```', true);
                 //embed.addField('Score', '```\n' + pScores.join('\n').slice(0, 1016) + '\n```', true);
-                //embed.addField('Time', '```\n' + pTimes.join('\n').slice(0, 1016) + '\n```', true);
+                embed.addField('Ping', '```\n' + pTimes.join('\n').slice(0, 1016) + '\n```', true);
             }
             embed.setImage(gs.history.statsChart(gs.info.playersMax));
         }
